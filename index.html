@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 Dynamic Quiz</h1>
+      <div class="quiz-info">
+        <span id="question-counter">Question 1 of 5</span>
+        <span id="score-display">Score: 0</span>
+      </div>
+    </header>
+
+    <main class="quiz-container">
+      <div id="quiz-content">
+        <h2 id="question-text" class="question-text">Loading question...</h2>
+        <div id="options-container" class="options-container">
+          <!-- Options will be inserted here -->
+        </div>
+      </div>
+
+      <div id="feedback" class="feedback hidden"></div>
+
+      <button id="next-btn" class="next-btn hidden">Next Question</button>
+    </main>
+
+    <div id="result-screen" class="result-screen hidden">
+      <h2>Quiz Completed! 🎉</h2>
+      <p class="final-score">Your Score: <span id="final-score">0</span></p>
+      <p class="total-questions">Total Questions: <span id="total-questions">0</span></p>
+      <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
